@@ -1,0 +1,308 @@
+.pkt-containers {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.pkt-canvas {
+  width: 100%;
+  height: 100%;
+  /* border-bottom: 1px solid #ccc;
+    border-left:1px solid #ccc */
+}
+
+.bjs-powered-by {
+  display: none;
+}
+
+.djs-palette {
+  left: 0px;
+  top: 104px;
+  width: 120px;
+}
+
+.djs-palette.two-column.open {
+  width: 120px;
+  /* height: 80%; */
+  overflow: auto;
+  padding: 5px;
+  padding-bottom: 30px;
+
+  bottom:0;
+}
+
+.djs-palette .entry {
+  width: 50%;
+}
+
+.pkt-search {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 120px;
+}
+
+.pkt-search div input {
+  border-radius: 0px;
+}
+
+.pkt-toolbar {
+  position: absolute;
+  top: 0px;
+  left: 120px;
+}
+
+.pkt-controls {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 0;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pkt-controls li:hover {
+  background: #f3f3f3;
+}
+
+.pkt-control {
+  position: relative;
+  display: inline-block;
+  padding: 6px 8px;
+  list-style-type: none;
+}
+
+.pkt-control button {
+  padding: 0;
+  color: #555;
+  font-size: 22px;
+  line-height: 26px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.pkt-control .pkt-openFile {
+  display: none;
+}
+
+.pkt-control.pkt-line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 16px;
+  border-right: 1px solid #ddd;
+  transform: translateY(-50%);
+}
+
+.pkt-control button i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.pkt-control button .pkt-zoom {
+  background: url('../icons/zoom.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-zoomIn {
+  background: url('../icons/zoomIn.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-zoomOut {
+  background: url('../icons/zoomOut.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-undo {
+  background: url('../icons/undo.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-redo {
+  background: url('../icons/redo.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-save {
+  background: url('../icons/save.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-download {
+  background: url('../icons/download.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-image {
+  background: url('../icons/image.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-delete {
+  background: url('../icons/delete.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-copy {
+  background: url('../icons/copy.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-middle {
+  background: url('../icons/middle.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-open {
+  background: url('../icons/open.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-fullscreen {
+  background: url('../icons/fullscreen.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-preview {
+  background: url('../icons/preview.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-preview-off {
+  background: url('../icons/preview-off.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-start {
+  background: url('../icons/start.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-stop {
+  background: url('../icons/stop.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-add {
+  background: url('../icons/add.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-tick {
+  background: url('../icons/tick.svg') 0 0 no-repeat;
+}
+
+.pkt-control button .pkt-clear {
+  background: url('../icons/clear.svg') 0 0 no-repeat;
+}
+
+.bpmn-icon-hand-tool::before {
+  vertical-align: super;
+}
+
+.bpmn-icon-lasso-tool::before {
+  vertical-align: super;
+}
+
+.bpmn-icon-space-tool::before {
+  vertical-align: super;
+}
+
+.bpmn-icon-connection-multi::before {
+  vertical-align: super;
+}
+
+.pkt-panel {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 35%;
+  height: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.pkt-panel-resize {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #f5f7fa;
+  cursor: ew-resize;
+  /* 左右光标 */
+}
+
+.pkt-panel-resize.hide {
+  width: 0px;
+}
+
+.pkt-panel-bar {
+  position: absolute;
+  z-index: 102;
+  top: 0px;
+  left: 2px;
+  width: 20px;
+  height: 100%;
+  background-color: #f5f7fa;
+}
+
+.pkt-panel-props {
+  position: absolute;
+  top: 0px;
+  left: 22px;
+  right: 0px;
+  border-left: 1px solid #ccc;
+  height: 100%;
+  background-color: #fff;
+  /* overflow-y: auto; */
+  overflow: hidden;
+}
+
+.pkt-panel-control {
+  position: relative;
+  display: inline-block;
+  padding: 1px 1px;
+  list-style-type: none;
+}
+
+.pkt-panel-control button {
+  padding: 0;
+  color: #555;
+  font-size: 22px;
+  line-height: 26px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.pkt-panel-control button i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.pkt-panel-control button .pkt-fullscreen-exit {
+  background: url('../icons/minus.svg') 0 0 no-repeat;
+}
+
+.pkt-panel-control button .pkt-fullscreen {
+  background: url('../icons/fullscreen.svg') 0 0 no-repeat;
+}
+
+.pkt-panel-control button .pkt-fullscreen-exit2 {
+  background: url('../icons/fullscreen-exit2.svg') 0 0 no-repeat;
+}
+
+.pkt-panel-control button .pkt-fullscreen2 {
+  background: url('../icons/fullscreen2.svg') 0 0 no-repeat;
+}
+
+/*elementui loading css 覆盖 开始*/
+.el-loading-spinner .circular {
+  width: 42px;
+  height: 42px;
+  animation: loading-rotate 2s linear infinite;
+  display: none;
+}
+
+.el-loading-spinner {
+  background: url('../image/loading.gif') no-repeat;
+  background-size: 48px 48px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 45%;
+}

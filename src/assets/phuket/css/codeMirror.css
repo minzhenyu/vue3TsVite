@@ -1,0 +1,51 @@
+.cm-controls {
+    display: inline-block;
+    margin-left: 0px;
+    padding: 0;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cm-controls li:hover {
+    background: #f3f3f3;
+}
+
+.cm-control {
+    position: relative;
+    display: inline-block;
+    padding: 0px 8px;
+    list-style-type: none;
+}
+
+.cm-control button {
+    padding: 0;
+    color: #555;
+    font-size: 22px;
+    line-height: 18px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.cm-control.cm-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 16px;
+    border-right: 1px solid #ddd;
+    transform: translateY(-50%);
+}
+
+.cm-control button i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.cm-control button .cm-format {
+    background: url('../icons/format.svg') 0 0 no-repeat;
+}
